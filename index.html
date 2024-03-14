@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="es">
+  canvas#canvas
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portafolio</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+      integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="estilo.css" />
+    <script
+      src="https://kit.fontawesome.com/46cf037216.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- MENU ENCABEZADO -->
+    <div class="contenedor-header">
+      <header>
+        <div class="logo">
+          <a href="#">Mi Portafolio</a>
+        </div>
+        <nav id="nav">
+          <ul>
+            <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+            <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
+            <li><a href="#skills" onclick="seleccionar()">SKILLS</a></li>
+            <li><a href="#portfolio" onclick="seleccionar()">PORTAFOLIO</a></li>
+            <li><a href="#formulario" onclick="seleccionar()">CONTACTO</a></li>
+          </ul>
+        </nav>
+        <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+      </header>
+    </div>
+
+    <!-- SECCION INICIO -->
+    <section id="inicio" class="inicio">
+      <div class="contenido-banner">
+        <div class="contenedor-img">
+          <img src="img/hero.png" alt="" />
+        </div>
+        <h1>Eder A. Chacón</h1>
+        <h2>Estudiante De Ingeniería En Sistemas</h2>
+        <div class="redes">
+          <a
+            href="https://www.facebook.com/eder.antonio.587?mibextid=ZbWKwL"
+            target="_blank"
+            ><i class="fa-brands fa-facebook-f"></i
+          ></a>
+          <a
+            href="https://www.instagram.com/ederchacon_?igsh=OGQ5ZDc2ODk2ZA=="
+            target="_blank"
+            ><i class="fa-brands fa-instagram"></i
+          ></a>
+          <a
+            href="https://x.com/ederzinh0?t=nxdGBdEWcqUKq4SOiyuMyg&s=09"
+            target="_blank"
+            ><i class="fa-brands fa-twitter"></i
+          ></a>
+          <a href="https://api.whatsapp.com/#50499360256" target="_blank"
+            ><i class="fa-brands fa-whatsapp"></i
+          ></a>
+          <a
+            href="https://www.tiktok.com/@eder__chacon?_t=8jOoueUFMcH&_r=1"
+            target="_blank"
+            ><i class="fa-brands fa-tiktok"></i
+          ></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECCION SOBRE MI -->
+    <section id="sobremi" class="sobremi">
+      <div class="contenido-seccion">
+        <h2>Sobre Mí</h2>
+        <p>
+          <span>Hola, Soy Eder A. Chacón.</span> Actualmente estudio la carrera
+          de ingeniería en ciencias de la computación en la Universidad Católica
+          de Honduras, y me apasiona mi carrera y todo lo relacionado con la
+          tecnología, las redes y el desarrollo web.
+        </p>
+
+        <div class="fila">
+          <!-- datos personales -->
+          <div class="col">
+            <h3>Datos Personales</h3>
+            <ul>
+              <li>
+                <strong>Cumpleaños</strong>
+                23/03/2003
+              </li>
+              <li>
+                <strong>Teléfono</strong>
+                99360256
+              </li>
+              <li>
+                <strong>Email</strong>
+                ederchacon123@gmail.com
+              </li>
+              <li>
+                <strong>Dirección</strong>
+                Cabañas Copán Ruinas - Honduras
+              </li>
+            </ul>
+          </div>
+
+          <!-- intereses -->
+          <div class="col">
+            <h3>Intereses</h3>
+            <div class="contenedor-intereses">
+              <div class="interes">
+                <i class="fa-solid fa-gamepad"></i>
+                <span>JUEGOS</span>
+              </div>
+              <div class="interes">
+                <i class="fa-solid fa-headphones"></i>
+                <span>ROCK</span>
+              </div>
+              <div class="interes">
+                <i class="fa-solid fa-network-wired"></i>
+                <span>REDES</span>
+              </div>
+              <div class="interes">
+                <i class="fa-solid fa-volleyball"></i>
+                <span>DEPORTE</span>
+              </div>
+              <div class="interes">
+                <i class="fa-solid fa-book"></i>
+                <span>LIBROS</span>
+              </div>
+              <div class="interes">
+                <i class="fa-solid fa-car"></i>
+                <span>VIAJAR</span>
+              </div>
+              <div class="interes">
+                <i class="fa-solid fa-film"></i>
+                <span>PELIS</span>
+              </div>
+              <div class="interes">
+                <i class="fa-solid fa-dumbbell"></i>
+                <span>EJERCICIO</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECCION SKILLS -->
+    <section class="skills" id="skills">
+      <div class="contenido-seccion">
+        <h2>Habilidades</h2>
+        <div class="fila">
+          <!-- Habilidades técnicas -->
+          <div class="col">
+            <h3>Habilidades Técnicas</h3>
+            <div class="skill">
+              <span>Javascript</span>
+              <div class="barra-skill">
+                <div class="progreso">
+                  <span>70%</span>
+                </div>
+              </div>
+            </div>
+            <div class="skill">
+              <span>HTML & CSS</span>
+              <div class="barra-skill">
+                <div class="progreso">
+                  <span>83%</span>
+                </div>
+              </div>
+            </div>
+            <div class="skill">
+              <span>Photoshop</span>
+              <div class="barra-skill">
+                <div class="progreso">
+                  <span>90%</span>
+                </div>
+              </div>
+            </div>
+            <div class="skill">
+              <span>Illustrator</span>
+              <div class="barra-skill">
+                <div class="progreso">
+                  <span>75%</span>
+                </div>
+              </div>
+            </div>
+            <div class="skill">
+              <span>Phyton</span>
+              <div class="barra-skill">
+                <div class="progreso">
+                  <span>60%</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Habilidades profesionales -->
+          <div class="col">
+            <h3>Habilidades Profesionales</h3>
+            <div class="skill">
+              <span>Trabajo en equipo</span>
+              <div class="barra-skill">
+                <div class="progreso">
+                  <span>70%</span>
+                </div>
+              </div>
+            </div>
+            <div class="skill">
+              <span>Comunicación</span>
+              <div class="barra-skill">
+                <div class="progreso">
+                  <span>80%</span>
+                </div>
+              </div>
+            </div>
+            <div class="skill">
+              <span>Creatividad</span>
+              <div class="barra-skill">
+                <div class="progreso">
+                  <span>91%</span>
+                </div>
+              </div>
+            </div>
+            <div class="skill">
+              <span>Dedicación</span>
+              <div class="barra-skill">
+                <div class="progreso">
+                  <span>88%</span>
+                </div>
+              </div>
+            </div>
+            <div class="skill">
+              <span>Liderazgo</span>
+              <div class="barra-skill">
+                <div class="progreso">
+                  <span>85%</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECCION PORTFOLIO -->
+    <section id="portfolio" class="portfolio">
+      <div class="contenido-seccion">
+        <h2>PORTAFOLIO</h2>
+        <div class="galeria">
+          <div class="proyecto">
+            <img src="img/a1.jpg" alt="" />
+            <div class="overlay">
+              <h3>Diseño 1</h3>
+              <p>Illustrator</p>
+            </div>
+          </div>
+          <div class="proyecto">
+            <img src="img/a2.jpg" alt="" />
+            <div class="overlay">
+              <h3>Diseño 2</h3>
+              <p>Illustrator</p>
+            </div>
+          </div>
+          <div class="proyecto">
+            <img src="img/a3.jpg" alt="" />
+            <div class="overlay">
+              <h3>Diseño 3</h3>
+              <p>Illustrator</p>
+            </div>
+          </div>
+          <div class="proyecto">
+            <img src="img/a7.jpg" alt="" />
+            <div class="overlay">
+              <h3>Diseño 4</h3>
+              <p>Photoshop</p>
+            </div>
+          </div>
+          <div class="proyecto">
+            <img src="img/a5.jpg" alt="" />
+            <div class="overlay">
+              <h3>Diseño 5</h3>
+              <p>Illustrator</p>
+            </div>
+          </div>
+          <div class="proyecto">
+            <img src="img/a6.jpg" alt="" />
+            <div class="overlay">
+              <h3>Diseño 6</h3>
+              <p>Illustrator</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FORMULARIO CONTACTO -->
+    <div class="Formulario-contacto" id="formulario">
+      <div class="Informacion-contacto">
+        <h3>Contáctame</h3>
+        <p>
+          <i class="fa-solid fa-location-pin"></i>Cabañas Copán Ruinas - Bo. El
+          Centro
+        </p>
+        <p>
+          <i class="fa-sharp fa-solid fa-envelope"></i>ederchacon123@gmail.com
+        </p>
+        <p><i class="fa-solid fa-phone"></i>(504) 9936-0256</p>
+      </div>
+      <div class="contenedor-formulario">
+        <form class="Formulario" id="Formulario">
+          <div
+            class="formulario_grupo_input Input-formulario"
+            id="grupo_nombre"
+          >
+            <label for="Nombre" class="formulario_label">Nombre</label>
+            <input
+              type="text"
+              class="formulario_input"
+              name="nombre"
+              placeholder="Juan"
+              id="Nombre"
+            />
+            <i class="form_validacion fa-solid fa-circle-xmark"></i>
+          </div>
+          <div id="texto">
+            <p class="Form_error">
+              El nombre solo puede contener letras, 2 como mínimo.
+            </p>
+          </div>
+
+          <div
+            class="formulario_grupo_input Input-formulario"
+            id="grupo_apellido"
+          >
+            <label for="Apellido" class="formulario_label">Apellido</label>
+            <input
+              type="text"
+              class="formulario_input"
+              name="apellido"
+              placeholder="Martínez"
+              id="Apellido"
+            />
+            <i class="form_validacion fa-solid fa-circle-xmark"></i>
+          </div>
+          <div id="texto1">
+            <p class="Form_error">
+              El apellido solo puede contener letras, 2 como mínimo.
+            </p>
+          </div>
+
+          <div
+            class="formulario_grupo_input Input-formulario"
+            id="grupo_correo"
+          >
+            <label for="Correo" class="formulario_label">Correo</label>
+            <input
+              type="email"
+              class="formulario_input"
+              name="correo"
+              placeholder="ejemplo@ejemplo.com"
+              id="Correo"
+            />
+            <i class="form_validacion fa-solid fa-circle-xmark"></i>
+          </div>
+          <div id="texto2">
+            <p class="Form_error">Ingrese un correo válido.</p>
+          </div>
+
+          <div
+            class="formulario_grupo_input Input-formulario"
+            id="grupo_telefono"
+          >
+            <label for="Telefono" class="formulario_label">Teléfono</label>
+            <input
+              type="tel"
+              class="formulario_input"
+              name="telefono"
+              placeholder="99887766"
+              id="Telefono"
+            />
+            <i class="form_validacion fa-solid fa-circle-xmark"></i>
+          </div>
+          <div id="texto3">
+            <p class="Form_error">
+              El telefóno solo puede contener números y un mínimo de 8 dígitos.
+            </p>
+          </div>
+
+          <div class="Input-formulario">
+            <label for="Comentario">Comentario</label>
+            <textarea name="" id="" cols="30" rows="10"></textarea>
+          </div>
+          <div class="formulario_mensaje" id="formulario_mensaje">
+            <p>
+              <i class="fa-solid fa-triangle-exclamation"></i> <b>Error:</b> Por
+              favor rellene el formulario correctamente.
+            </p>
+          </div>
+          <div class="btn-formulario">
+            <div class="boton-enviar">
+              <button>
+                Enviar Mensaje<i class="fa-solid fa-paper-plane"></i>
+                <span class="overlay"></span>
+              </button>
+            </div>
+            <p class="formulario_mensaje_exito" id="formulario_mensaje_exito">
+              Formulario enviado exitosamente
+            </p>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <!-- footer -->
+    <footer>
+      <a href="#inicio" class="arriba">
+        <i class="fa-solid fa-angles-up"></i>
+      </a>
+      <div class="redes">
+        <a href="https://www.facebook.com" target="_blank"
+          ><i class="fa-brands fa-facebook-f"></i
+        ></a>
+        <a href="https://www.instagram.com" target="_blank"
+          ><i class="fa-brands fa-instagram"></i
+        ></a>
+        <a href="https://www.twitter.com" target="_blank"
+          ><i class="fa-brands fa-twitter"></i
+        ></a>
+        <a href="https://www.whatsapp.com" target="_blank"
+          ><i class="fa-brands fa-whatsapp"></i
+        ></a>
+        <a href="https://www.tiktok.com" target="_blank"
+          ><i class="fa-brands fa-tiktok"></i
+        ></a>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
